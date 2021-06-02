@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MusicCell" customModule="Task_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iW3-WQ-ls5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wBi-b2-xUJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wgd-m8-54T">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Wgd-m8-54T" secondAttribute="height" multiplier="1:1" id="4bE-5j-78z"/>
+                                            <constraint firstAttribute="height" constant="75" id="RH1-kr-Tgy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioA-dg-q57">
+                                        <rect key="frame" x="91" y="27.5" width="138" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NS2-bQ-Mk1">
+                                        <rect key="frame" x="245" y="0.0" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="fat-79-gUl"/>
+                                            <constraint firstAttribute="width" secondItem="NS2-bQ-Mk1" secondAttribute="height" multiplier="1:1" id="wxx-l3-GBj"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="icloud.and.arrow.down" catalog="system"/>
+                                        <connections>
+                                            <action selector="downloadTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eF3-s9-IFV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tu-E8-QDd">
+                                <rect key="frame" x="180" y="0.0" width="140" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ok8-xa-Ypm">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Ppp-nf-Nog"/>
+                                            <constraint firstAttribute="width" secondItem="ok8-xa-Ypm" secondAttribute="height" multiplier="1:1" id="iJX-RE-Gzx"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="play" catalog="system"/>
+                                        <connections>
+                                            <action selector="resumeTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="26G-22-zFh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syG-xU-G11" userLabel="Stop">
+                                        <rect key="frame" x="70" y="0.0" width="70" height="70"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="stop" catalog="system"/>
+                                        <connections>
+                                            <action selector="stopTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="t6U-Bd-ddf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="syG-xU-G11" firstAttribute="width" secondItem="ok8-xa-Ypm" secondAttribute="height" multiplier="1:1" id="NIY-wk-oAH"/>
+                                </constraints>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="redraw" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7W8-JF-iCE">
+                                <rect key="frame" x="0.0" y="71" width="320" height="4"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wBi-b2-xUJ" firstAttribute="top" secondItem="iW3-WQ-ls5" secondAttribute="top" id="53g-25-YMA"/>
+                            <constraint firstAttribute="trailing" secondItem="7W8-JF-iCE" secondAttribute="trailing" id="6Na-JS-eSt"/>
+                            <constraint firstItem="7W8-JF-iCE" firstAttribute="leading" secondItem="iW3-WQ-ls5" secondAttribute="leading" id="CbY-i5-YPH"/>
+                            <constraint firstAttribute="bottom" secondItem="3Tu-E8-QDd" secondAttribute="bottom" id="JoQ-GR-vYU"/>
+                            <constraint firstAttribute="bottom" secondItem="7W8-JF-iCE" secondAttribute="bottom" id="evm-x1-uu6"/>
+                            <constraint firstAttribute="trailing" secondItem="3Tu-E8-QDd" secondAttribute="trailing" id="gRC-aM-i4g"/>
+                            <constraint firstItem="3Tu-E8-QDd" firstAttribute="top" secondItem="iW3-WQ-ls5" secondAttribute="top" id="pQV-2p-f9O"/>
+                            <constraint firstAttribute="bottom" secondItem="wBi-b2-xUJ" secondAttribute="bottom" id="qdI-Ao-Ymx"/>
+                            <constraint firstAttribute="trailing" secondItem="wBi-b2-xUJ" secondAttribute="trailing" id="seW-vF-P5Z"/>
+                            <constraint firstItem="wBi-b2-xUJ" firstAttribute="leading" secondItem="iW3-WQ-ls5" secondAttribute="leading" id="yAd-fB-9V0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iW3-WQ-ls5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1BF-FA-okB"/>
+                    <constraint firstAttribute="trailing" secondItem="iW3-WQ-ls5" secondAttribute="trailing" id="3ee-Yb-9PA"/>
+                    <constraint firstAttribute="bottom" secondItem="iW3-WQ-ls5" secondAttribute="bottom" id="9gf-Iz-d2b"/>
+                    <constraint firstItem="iW3-WQ-ls5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hRu-s5-q7u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coverImage" destination="Wgd-m8-54T" id="xCr-UI-Ftm"/>
+                <outlet property="downloadButton" destination="NS2-bQ-Mk1" id="S5U-Dk-hn3"/>
+                <outlet property="nameLabel" destination="ioA-dg-q57" id="JLC-ik-GDS"/>
+                <outlet property="progressView" destination="7W8-JF-iCE" id="sgE-EV-P6K"/>
+                <outlet property="resumeButton" destination="ok8-xa-Ypm" id="Xqe-ul-gTs"/>
+                <outlet property="stopButton" destination="syG-xU-G11" id="2yB-oI-USx"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="82.366071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icloud.and.arrow.down" catalog="system" width="128" height="112"/>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <image name="stop" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

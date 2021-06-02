@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D11AFF1266708050026238C /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D11AFF0266708050026238C /* PlayerViewModel.swift */; };
+		4D0D4BA62667993100F3F191 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D4BA52667993100F3F191 /* PlayerViewModel.swift */; };
 		4D1F822726540C7F00BDC159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F822626540C7F00BDC159 /* AppDelegate.swift */; };
 		4D1F822926540C7F00BDC159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F822826540C7F00BDC159 /* SceneDelegate.swift */; };
 		4D1F822B26540C7F00BDC159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F822A26540C7F00BDC159 /* ViewController.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D11AFF0266708050026238C /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerViewModel.swift; path = "../../../../../../Documents/Coding/Git/Test Tasks/Task 2/Task 2/ViewModels/PlayerViewModel.swift"; sourceTree = "<group>"; };
+		4D0D4BA52667993100F3F191 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		4D1F822326540C7F00BDC159 /* Task 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1F822626540C7F00BDC159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D1F822826540C7F00BDC159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,22 +106,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		4DA2DB632663FD290081B22B /* PlayerView */ = {
+		4DA2DB632663FD290081B22B /* TrackDetailView */ = {
 			isa = PBXGroup;
 			children = (
 				4D468264265E608500DCEDE0 /* PlayerView.swift */,
 				4D468267265E609000DCEDE0 /* PlayerView.xib */,
 			);
-			path = PlayerView;
+			path = TrackDetailView;
 			sourceTree = "<group>";
 		};
-		4DA2DB662663FD8C0081B22B /* MusicCell */ = {
+		4DA2DB662663FD8C0081B22B /* MusicTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				4D1F823B26540F0000BDC159 /* MusicCell.swift */,
 				4D1F823C26540F0000BDC159 /* MusicCell.xib */,
 			);
-			path = MusicCell;
+			path = MusicTableViewCell;
 			sourceTree = "<group>";
 		};
 		4DA2DB672663FDAF0081B22B /* ViewModels */ = {
@@ -129,7 +129,7 @@
 			children = (
 				4DA2DB3026625F920081B22B /* MainViewModel.swift */,
 				4D45D40F265543A100330CC1 /* DataProvider.swift */,
-				4D11AFF0266708050026238C /* PlayerViewModel.swift */,
+				4D0D4BA52667993100F3F191 /* PlayerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -137,8 +137,8 @@
 		4DA2DB692663FDC50081B22B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4DA2DB632663FD290081B22B /* PlayerView */,
-				4DA2DB662663FD8C0081B22B /* MusicCell */,
+				4DA2DB632663FD290081B22B /* TrackDetailView */,
+				4DA2DB662663FD8C0081B22B /* MusicTableViewCell */,
 				4D1F822A26540C7F00BDC159 /* ViewController.swift */,
 			);
 			path = View;
@@ -232,12 +232,12 @@
 				4D468265265E608500DCEDE0 /* PlayerView.swift in Sources */,
 				4D1F822726540C7F00BDC159 /* AppDelegate.swift in Sources */,
 				4D563247265444D0003BD103 /* DownloadModel.swift in Sources */,
+				4D0D4BA62667993100F3F191 /* PlayerViewModel.swift in Sources */,
 				4D45D410265543A100330CC1 /* DataProvider.swift in Sources */,
 				4DA2DB3126625F920081B22B /* MainViewModel.swift in Sources */,
 				4D1F822926540C7F00BDC159 /* SceneDelegate.swift in Sources */,
 				4D1F823D26540F0000BDC159 /* MusicCell.swift in Sources */,
 				4D45D40D26551DC500330CC1 /* TrackModel.swift in Sources */,
-				4D11AFF1266708050026238C /* PlayerViewModel.swift in Sources */,
 				4D46826F265E6A9100DCEDE0 /* CMTime.swift in Sources */,
 				4D468272265E779C00DCEDE0 /* Nib.swift in Sources */,
 			);
